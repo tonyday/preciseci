@@ -1,4 +1,5 @@
 This vagrant setup builds a fresh Ubuntu 14.04 development machine with the following installed:
+
 1. git
 2. postgres
 3. ruby 2.2.2
