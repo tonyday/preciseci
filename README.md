@@ -1,10 +1,10 @@
 This vagrant setup builds a fresh Ubuntu 14.04 development machine with the following installed:
 
-1. git
-2. postgres
-3. ruby 2.2.2
-4. heroku toolbelt
-5. nodejs
+* git
+* postgres
+* ruby 2.2.2
+* heroku toolbelt
+* nodejs
 
 which I find quite useful for Rails development.
 
