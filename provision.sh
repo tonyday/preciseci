@@ -72,17 +72,20 @@ sudo apt-get install -y tree
 # Install Heroku toolbelt
 curl https://toolbelt.heroku.com/install-ubuntu.sh | sh
 
-# Setup some useful aliases for foreman
-echo 'alias be="bundle exec"' >> ~/.bash_aliases
-echo 'alias bef="bundle exec foreman"' >> ~/.bash_aliases
-echo 'alias befr="bundle exec foreman run"' >> ~/.bash_aliases
-echo 'alias gss="git status -s"' >> ~/.bash_aliases
-echo 'alias gst="git status"' >> ~/.bash_aliases
-echo 'alias gd="git diff"' >> ~/.bash_aliases
-echo 'alias gl="git log --oneline --decorate --color --graph"' >> ~/.bash_aliases
-echo 'alias gp="git push"' >> ~/.bash_aliases
-echo 'alias gwc="git whatchanged -p --abbrev-commit --pretty=medium"' >> ~/.bash_aliases
-source ~/.bash_aliases
+# Setup some useful aliases
+cat << EOF > ~/.bash_aliases
+# Some useful aliases
+alias be="bundle exec"
+alias bef="bundle exec foreman"
+alias befr="bundle exec foreman run"
+alias gs="git status -s"
+alias gss="git status"
+alias gd="git diff"
+alias gl="git log --oneline --decorate --color --graph"
+alias gp="git push"
+alias gwc="git whatchanged -p --abbrev-commit --pretty=medium"
+alias glola='git log --graph --pretty=format:'\''%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'\'' --abbrev-commit --all'
+EOF
 
 # Clean-up the box for re-packaging
 # Remove APT cache
