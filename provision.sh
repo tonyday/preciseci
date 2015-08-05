@@ -72,8 +72,13 @@ sudo apt-get install -y tree
 # Install Heroku toolbelt
 curl https://toolbelt.heroku.com/install-ubuntu.sh | sh
 
-# Setup some useful aliases
+# Setup some useful aliases and bash stuff
 cat << EOF > ~/.bash_aliases
+
+# Include git branch in bash prompt
+source /etc/bash_completion.d/git-prompt
+PS1="[\[\033[32m\]\w]\[\033[0m\]\$(__git_ps1)\[\033[1;36m\]\u\[\033[32m\]$ \[\033[0m\]"
+
 # Some useful aliases
 alias be="bundle exec"
 alias bef="bundle exec foreman"
