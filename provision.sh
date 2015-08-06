@@ -73,11 +73,28 @@ sudo apt-get install -y tree
 curl https://toolbelt.heroku.com/install-ubuntu.sh | sh
 
 # Setup some useful aliases and bash stuff
-cat << EOF > ~/.bash_aliases
+cat << 'EOF' > ~/.bash_aliases
 
 # Include git branch in bash prompt
 source /etc/bash_completion.d/git-prompt
-PS1="[\[\033[32m\]\w]\[\033[0m\]\$(__git_ps1)\[\033[1;36m\]\u\[\033[32m\]$ \[\033[0m\]"
+
+# I decided we needed just the tiniest bit of bling
+# Some color stuff
+None='\e[0m'
+Black='\e[0;30m'
+Red='\e[0;31m'
+Green='\e[0;32m'
+Yellow='\e[0;33m'
+Blue='\e[0;34m'
+Magenta='\e[0;35m'
+Cyan='\e[0;36m'
+White='\e[0;37m'
+
+_host="${Blue}\h${None}"
+_dir="${Green}\w${none}"
+_git="${Red}\$(__git_ps1)${None}"
+
+export PS1="${_host}[${_dir}]${_git} "
 
 # Some useful aliases
 alias be="bundle exec"
@@ -90,6 +107,7 @@ alias gl="git log --oneline --decorate --color --graph"
 alias gp="git push"
 alias gwc="git whatchanged -p --abbrev-commit --pretty=medium"
 alias glola='git log --graph --pretty=format:'\''%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'\'' --abbrev-commit --all'
+
 EOF
 
 # Clean-up the box for re-packaging
