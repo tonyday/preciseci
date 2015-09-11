@@ -1,7 +1,11 @@
 This vagrant setup builds a fresh Ubuntu 14.04 development machine with the following installed:
+
+* zsh
+* oh-my-zsh
+* vim (with Ruby/Rails supporting plugins)
 * git
 * postgres
-* ruby 2.2.2
+* ruby 2.2.3
 * heroku toolbelt
 * nodejs
 

@@ -4,5 +4,7 @@ Vagrant.configure(2) do |config|
     v.memory = 2048
     v.cpus = 2
   end
-  config.vm.provision 'shell', path: 'provision.sh', privileged: false
+  Dir['??_*.sh'].sort.each do |filename|
+    config.vm.provision 'shell', path: filename, privileged: false
+  end
 end
