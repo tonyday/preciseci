@@ -12,5 +12,5 @@ sudo chsh -s /bin/zsh vagrant
 # Tell zsh to load customisations (if they exist)
 cat << 'EOF' >> ~/.zshrc
 # Load customisations (if they exist)
-[ -f .custom.zsh ] && source .custom.zsh
+[ -f .custom_bash_zsh ] && source .custom_bash_zsh
 EOF
