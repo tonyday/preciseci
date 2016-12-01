@@ -15,7 +15,7 @@ Once the build is complete the machine can be packaged as a new vagrant box to s
 
 Try the following:
 
-Package the current VM (be default it creates a file called package.box)
+Package the current VM (by default it creates a file called package.box)
 ````
 vagrant package
 ````
