@@ -1,6 +1,6 @@
 sudo apt-get install -y build-essential
 sudo apt-get install -y curl
-sudo apt-get install -y git-core
+sudo apt-get install -y git # Should be installed from git PPA
 sudo apt-get install -y libcurl4-openssl-dev
 sudo apt-get install -y libffi-dev
 sudo apt-get install -y libpq-dev
