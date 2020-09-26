@@ -14,3 +14,12 @@ sudo apt-get install -y silversearcher-ag
 sudo apt-get install -y tree
 sudo apt-get install -y zlib1g-dev
 sudo apt-get install -y zsh
+sudo apt-get install -y gstreamer1.0-plugins-base
+sudo apt-get install -y gstreamer1.0-tools
+sudo apt-get install -y gstreamer1.0-x
+sudo apt-get install -y libqt5webkit5-dev
+sudo apt-get install -y libsqlite3-dev
+sudo apt-get install -y qt5-default
+sudo apt-get install -y qtdeclarative5-dev
+sudo apt-get install -y sqlite3
+sudo apt-get install -y vim

@@ -1,15 +1,15 @@
-This vagrant setup builds a fresh Ubuntu 14.04 development machine with the following installed:
+This vagrant setup builds a fresh Ubuntu 12.04 machine with the following installed:
 
 * zsh
 * oh-my-zsh
 * vim (with Ruby/Rails supporting plugins)
 * git
-* postgres
-* ruby 2.2.3
+* postgres 9.6
+* ruby 2.3.0
 * heroku toolbelt
 * nodejs
 
-which I find quite useful for Rails development.
+which can be used for development and/or CI testing of Rails projects.
 
 Once the build is complete the machine can be packaged as a new vagrant box to speed future creation of new development machines.
 

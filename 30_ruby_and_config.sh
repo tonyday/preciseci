@@ -1,10 +1,10 @@
 # Install ruby from source (no need for ruby version manager)
 # Get the source
-curl -O https://cache.ruby-lang.org/pub/ruby/2.3/ruby-2.3.3.tar.gz
+curl -O https://cache.ruby-lang.org/pub/ruby/2.3/ruby-2.3.0.tar.gz
 # unpack the source
-tar xvzf ruby-2.3.3.tar.gz
+tar xvzf ruby-2.3.0.tar.gz
 # configure and make
-cd ruby-2.3.3
+cd ruby-2.3.0
 ./configure --prefix=$HOME/ruby
 make
 make install
